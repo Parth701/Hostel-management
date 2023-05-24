@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <body>
+    <style>
+    p{
+        font-size: medium;
+    }
+    body{
+        background-color: aqua;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    </style>
+      <p>Click on the button to generate a unique ID.</p>
+      <script>
+let p1Button = document.querySelector('#p1Button')</script>
+      <button id="p1button" onclick="generate()">Click here</button>
+      <script> 
+        </script>
+      <p id="uniqueID"></p>
+      <script>
+         function generate() {
+         let id = () => {
+           return Math.floor((1 + Math.random()) * 0x10000)
+               .toString(16)
+               .substring(1);
+               p1Button.disabled = true;
+         }
+//          var disableButton = (e) => {
+//     console.log("va");
+//     $('#my-button').prop('disabled', true);
+// };
+            
+
+           document.getElementById("uniqueID").innerHTML = id();
+            
+         }
+      </script>
+   </body>
+</html>

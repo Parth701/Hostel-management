@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Complete Responsive Food / Restaurant Website Design Tutorial</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+   <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/css/lightgallery.min.css">
+
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="mess.css">
+   <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+   <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+</head>
+<body>
+   
+<!-- header section starts     -->
+
+<section class="header">
+
+   <a href="#" class="logo"> <i class="fas fa-utensils"></i> food. </a>
+
+   <nav class="navbar">
+      <a href="Main.html">Home</a>
+      <a href="Aboutus.html">About Us</a>
+      <a href="Form.html">Book Your Room</a>
+      <a href="attraction.html">Attractions</a>
+      <a href="mess.html">Mess</a>
+   </nav>
+
+   <div id="menu-btn" class="fas fa-bars"></div>
+
+</section>
+
+<!-- header section ends    -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+
+   <div class="swiper home-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" style="background: url(images/home-slide-1.jpg) no-repeat;">
+            <div class="content">
+               <h3>delicious cooking</h3>
+               <!-- <a href="#" class="btn">get started</a> -->
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(images/home-slide-2.jpg) no-repeat;">
+            <div class="content">
+               <h3>morning moment</h3>
+               <!-- <a href="#" class="btn">get started</a> -->
+            </div>
+         </div>
+
+         <div class="swiper-slide slide" style="background: url(images/home-slide-3.jpg) no-repeat;">
+            <div class="content">
+               <h3>authentic kitchen</h3>
+               <!-- <a href="#" class="btn">get started</a> -->
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+
+   </div>
+
+</section>
+
+<!-- home section ends -->
+
+<!-- about section starts  -->
+
+<section class="about" id="about">
+
+   <div class="image">
+      <img src="images/about-img.png" alt="">
+   </div>
+
+   <div class="content">
+      <h3 class="title">welcome to our mess</h3>
+      <p>you don't need a silver fork to eat good food.!</p>
+      <!-- <a href="#" class="btn">read more</a> -->
+      <div class="icons-container">
+         <div class="icons">
+            <img src="images/about-icon-1.png" alt="">
+            <h3>quality food</h3>
+         </div>
+         <div class="icons">
+            <img src="images/about-icon-2.png" alt="">
+            <h3>food & drinks</h3>
+         </div>
+         <div class="icons">
+            <img src="images/about-icon-3.png" alt="">
+            <h3>expert chefs</h3>
+         </div>
+      </div>
+   </div>
+
+</section>
+
+<!-- about section ends -->
+
+<!-- food section starts  -->
+
+<section class="food" id="food">
+
+   <div class="heading">  
+      <span>You can order as well</span>
+      <h3>our delicious food</h3>
+   </div>
+
+   <div class="swiper food-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide" data-name="food-1">
+            <img src="images/food-img-1.png" alt="">
+            <h3>Aashiyana's Speciality</h3>
+            <div class="price">₹400</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-2">
+            <img src="images/food-img-2.png" alt="">
+            <h3>Nutritious Salad</h3>
+            <div class="price">₹300</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-3">
+            <img src="images/food-img-3.png" alt="">
+            <h3>chicken</h3>
+            <div class="price">₹500</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-4">
+            <img src="images/food-img-4.png" alt="">
+            <h3>Jellicious Fruities</h3>
+            <div class="price">₹150</div>
+         </div>
+
+         <div class="swiper-slide slide" data-name="food-5">
+            <img src="images/food-img-5.png" alt="">
+            <h3>Chicken Tikka Masala</h3>
+            <div class="price">₹399</div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- food section ends -->
+
+<!-- food preview section starts  -->
+
+<section class="food-preview-container">
+
+   <div id="close-preview" class="fas fa-times"></div>
+
+   <div class="food-preview" data-target="food-1">
+      <img src="images/food-img-1.png" alt="">
+      <h3>delicious food</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Healthy wealthy!</p>
+      <div class="price">₹400</div>
+      <a href="#" class="btn">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-2">
+      <img src="images/food-img-2.png" alt="">
+      <h3>Nutritious Salad</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Healthy wealthy!</p>
+      <div class="price">₹300</div>
+      <a href="#" class="btn">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-3">
+      <img src="images/food-img-3.png" alt="">
+      <h3>chicken</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Healthy wealthy!</p>
+      <div class="price">₹500</div>
+      <a href="#" class="btn">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-4">
+      <img src="images/food-img-4.png" alt="">
+      <h3>Jellicious Fruities</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Healthy wealthy!</p>
+      <div class="price">₹150</div>
+      <a href="#" class="btn">buy now</a>
+   </div>
+
+   <div class="food-preview" data-target="food-5">
+      <img src="images/food-img-5.png" alt="">
+      <h3>Chicken Tikka Masala</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+      </div>
+      <p>Healthy wealthy!</p>
+      <div class="price">₹49.99</div>
+      <a href="#" class="btn">buy now</a>
+   </div>
+
+</section>
+
+<!-- food preview section ends -->
+
+<!-- gallery section starts  -->
+
+<section class="gallery" id="gallery">
+
+   <div class="heading">
+      <span>our gallery</span>
+      <h3>our untold stories</h3>
+   </div>
+
+   <div class="gallery-container">
+
+      <a href="images/food-galler-img-1.jpg" class="box">
+         <img src="images/food-galler-img-1.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="images/food-galler-img-2.jpg" class="box">
+         <img src="images/food-galler-img-2.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="images/food-galler-img-3.jpg" class="box">
+         <img src="images/food-galler-img-3.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="images/food-galler-img-4.jpg" class="box">
+         <img src="images/food-galler-img-4.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+      
+      <a href="images/food-galler-img-5.jpg" class="box">
+         <img src="images/food-galler-img-5.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+      <a href="images/food-galler-img-6.jpg" class="box">
+         <img src="images/food-galler-img-6.jpg" alt="">
+         <div class="icon"> <i class="fas fa-plus"></i> </div>
+      </a>
+
+   </div>
+
+</section>
+
+<!-- gallery section ends -->
+
+<!-- menu section starts  -->
+
+<section class="menu" id="menu">
+
+   <div class="heading">
+      <span>our menu</span>
+   </div>
+
+   <div class="swiper menu-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <h3 class="title">breakfast</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Monday</h3>
+                     <p>Aaloo Paratha with curd and pickle.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Tuesday</h3>
+                     <p>Sandwith with juice</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Wednesday</h3>
+                     <p>Chocos mixed sprouts, muskmelon.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Thursday</h3>
+                     <p>Uttapam, chana sprouts.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Friday</h3>
+                     <p>Idli sambhar.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Saturday</h3>
+                     <p>Poha, chocos, papaya.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Sunday</h3>
+                     <p>Pao Bhaji.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">lunch</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Monday</h3>
+                     <p>Plain Rice,Veg Pulao,Bagara Baingan,  Radish Sambar, Dal Chutney, Raita.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Tuesday</h3>
+                     <p>Plain Rice,Roti, Three In One Dal,Tomato Rasam,Cabbage Fry, Coriander Chutney,Curd.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Wednesday</h3>
+                     <p>Plain Rice,Roti, Dal Makhani,Sambar,Chutney, Curd.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Thursday</h3>
+                     <p>Plain Rice,Jeera Rice,veg Chatpata, Sambar, Curd,Cabbage Chutney.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Friday</h3>
+                     <p>Plain Rice, Roti, PalakPaneer, Drumstick Sambar,Dosakai Chutney, Curd.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Saturday</h3>
+                     <p>Plain Rice,Veg Biryani, Bagara Capsicum, Sambar, Brinjal Chutney, Mixed Raita.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Sunday</h3>
+                     <p>Plain Rice, Lemon Rice,Mixed Veg Kurma,Pumpkin Sambar,Chutney,Raita.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">dinner</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Monday</h3>
+                     <p>Chapatti (Plain, Buttered), Rasam, Pickle, Sela rice, 
+                        Salad (Onion, Green chili, Lemon -4 pieces)
+                        Extra: Egg preparation, Boiled egg, Dal or Veg Fry.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Tuesday</h3>
+                     <p>Pav bhaji, Dal Moong- chana, Boil rice, Salad chop-onion, chapatti, Brownie with chocolate sauce.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Wednesday</h3>
+                     <p>Chilli Paneer, Schezwan rice, Aloo Gobi spring onion, Dal masoor, Chapatti, Ice cream-cup.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Thursday</h3>
+                     <p>Panir handi Sula, Roomali Roti, Dal Arhar, Steamed rice, Motichoor laddu.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Friday</h3>
+                     <p>Paneer & Gobi-Stuff Paratha, pickle, green and Garlic chutney, Dal Maharani, Boil rice, butter, Ice cream.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Saturday</h3>
+                     <p>macaroni veg mornay, multigrain bread, butter, Dal Moong, boil rice, aloo-nutri nugget, chapatti, Cake custard.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Sunday</h3>
+                     <p>Dal Makhni, Steamed rice, Salad Russian, Chapatti, Atta Hulwa.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">drinks</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Monday</h3>
+                     <p>Cappuccino.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Tuesday</h3>
+                     <p>Expresso.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Wednesday</h3>
+                     <p>Latte.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Thursday</h3>
+                     <p>Tea.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Friday</h3>
+                     <p>Americano.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Saturday</h3>
+                     <p>Frappe.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Sunday</h3>
+                     <p>Iced Coffee.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <h3 class="title">dessert</h3>
+            <div class="box-container">
+               <div class="box">
+                  <div class="info">
+                     <h3>Monday</h3>
+                     <p>Kheer.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Tuesday</h3>
+                     <p>Gajar Halwa.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Wednesday</h3>
+                     <p>Gulab Jamun.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Thursday</h3>
+                     <p>Fruit Custurd.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Friday</h3>
+                     <p>Daliya.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Saturday</h3>
+                     <p>Rasgulla.</p>
+                  </div>
+               </div>
+               <div class="box">
+                  <div class="info">
+                     <h3>Sunday</h3>
+                     <p>Jalebi.</p>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- menu section ends -->
+
+<!-- order section starts  -->
+
+<section class="order" id="order">
+
+   <div class="heading">
+      <span>Listen To Learn</span>
+      <h3>Feedback</h3>
+   </div>
+
+   <form action="" id="feedbackmess">
+      <div class="alert">Your Valuable Suggestion has been recorded!!!</div>
+      <div class="box-container">
+         <div class="box">
+            <div class="inputBox">
+               <span>full name</span>
+               <input type="text" placeholder="enter your name" name="nam" id="yname" required>
+            </div>
+            
+            <div class="inputBox">
+               <span>E-mail</span>
+               <input type="text" placeholder="e-mail id" name="mail" id="email" required>
+            </div>
+            <div class="inputBox">
+               <span>tell us</span>
+               <textarea name="tel" placeholder="type here" id="" cols="30" rows="10" id="tells" required></textarea>
+            </div>
+         </div>
+         
+      </div>
+      <input type="submit" value="Submit" class="btn" id="submit">
+   </form>
+   
+</section>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="messi.js"></script>
+<!-- order section ends -->
+
+<!-- blogs section starts  -->
+
+<section class="blogs" id="blogs">
+
+   <div class="heading">
+      <span>our blogs</span>
+      <h3>our latest posts</h3>
+   </div>
+
+   <div class="swiper blogs-slider">
+
+      <div class="swiper-wrapper">
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-img-1.jpg" alt="">
+               <span>burger</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st Jan, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">Love at first burger.</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-img-2.jpg" alt="">
+               <span>sandwich</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st june, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">Friends buy you a sandwich. Best friends eat your sandwich.</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-img-3.jpg" alt="">
+               <span>chicken</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 24st Jan, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">The only things that succeed by sitting are chickens.</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-img-4.jpg" alt="">
+               <span>ice-cream</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">Summer would not be summer without Ice-cream. Ice-cream is the favorite currency of love.</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-img-5.jpg" alt="">
+               <span>pizza</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">A little slice of paradise.</a>
+            </div>
+         </div>
+
+         <div class="swiper-slide slide">
+            <div class="image">
+               <img src="images/blog-img-6.jpg" alt="">
+               <span>coffee</span>
+            </div>
+            <div class="content">
+               <div class="icon">
+                  <a href="#"> <i class="fas fa-calendar"></i> 21st may, 2022 </a>
+                  <a href="#"> <i class="fas fa-user"></i> by admin </a>
+               </div>
+               <a href="#" class="title">Given enough coffee, I could rule the world.</a>
+            </div>
+         </div>
+
+      </div>
+
+      <div class="swiper-pagination"></div>
+
+   </div>
+
+</section>
+
+<!-- blogs section ends -->
+
+<!-- footer section starts  -->
+
+<section class="footer">
+
+   <div class="icons-container">
+
+      <div class="icons">
+         <i class="fas fa-clock"></i>
+         <h3>opening hours</h3>
+         <p>07:00am to 10:00pm</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-phone"></i>
+         <h3>phone</h3>
+         <p>8077662800</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-envelope"></i>
+         <h3>email</h3>
+         <p>  info@aggarwalhouse.com</p>
+      </div>
+
+      <div class="icons">
+         <i class="fas fa-map"></i>
+         <h3>address</h3>
+         <p>Dehradun, india - 248001</p>
+      </div>
+
+   </div>
+
+   <div class="share">
+      <a href="https://www.instagram.com/aggarwals__aashiyana/" class="fab fa-instagram"></a>
+   </div>
+
+   <div class="credit"> created by <span>Arinjay Aggarwal</span> | all rights reserved! </div>
+
+</section>
+
+<!-- footer section ends  -->
+
+
+
+
+
+
+
+
+
+
+<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
+
+
+
+<!-- custom js file link  -->
+
+
+
+<script>
+   lightGallery(document.querySelector('.gallery .gallery-container'));
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+<script src="mess.js"></script>
+
+
+</body>
+</html>
